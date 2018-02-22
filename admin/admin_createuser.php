@@ -50,9 +50,12 @@
     <input type="text" name="fname" value="">
     <label>Username</label>
     <input type="text" name="username" value="">
-    <label>Password</label>
-    <input type="password" name="password" value="">
+    <!-- <label>Password</label> -->
+    <!-- <input type="password" name="password" value= <?php echo $genPassword;?>>
+    <div class="gen-pas admin-button" <?php if(isset($_POST['user_pass'])){
+       $genPassword;}?> >Generate New Password</div> -->
     <label class="email">Email</label>
+
     <input type="text" name="email" value="">
     <br>
       <select name="lvllist">

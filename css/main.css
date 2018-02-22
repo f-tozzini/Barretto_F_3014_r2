@@ -135,6 +135,12 @@ form {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13b1ef', endColorstr='#007da0',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
 
+.gen-pas {
+  margin-left: 105px;
+  margin-bottom: 0px;
+  height: 15px;
+  width: 250px; }
+
 #user-container {
   width: 400px;
   margin: 0 auto;

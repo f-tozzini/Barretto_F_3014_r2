@@ -2,7 +2,7 @@
   function logIn($username, $password, $ip) {
     require_once('connect.php');
     $username = mysqli_real_escape_string($link, $username);
-    $password = mysqli_real_escape_string($link, $password);
+    $password = mysqli_real_escape_string($link, $generatePas);
     $loginstring = "SELECT * FROM tbl_user WHERE user_name= '{$username}' AND user_pass='{$password}'";
     $user_set = mysqli_query($link, $loginstring);
 
@@ -19,7 +19,7 @@
       redirect_to("admin_index.php");
       // echo $id;
     }else{
-      $message = "ERROOOOOOOOOU";
+      $message = "Wrong!";
       return $message;
     }
     // echo mysqli_num_rows($user_set);

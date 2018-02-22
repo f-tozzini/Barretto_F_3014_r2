@@ -141,9 +141,15 @@ form{
   background: linear-gradient(135deg, rgba(19,177,239,1) 0%,rgba(0,125,160,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13b1ef', endColorstr='#007da0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   }
-  &:last-child{
-
-  }
+}
+.gen-pas
+{
+  margin-left:105px;
+  margin-bottom: 0px;
+  // margin: 0 auto;
+  // text-align: center;
+  height: 15px;
+  width: 250px;
 }
 
 //User
