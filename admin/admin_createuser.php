@@ -43,6 +43,8 @@
 <body>
   <h2>Create User</h2>
   <?php if(!empty($message)) { echo $message;} ?>
+
+  <div id="user-container">
   <form action="admin_createuser.php" method="post">
     <label>First Name</label>
     <input type="text" name="fname" value="">
@@ -50,17 +52,19 @@
     <input type="text" name="username" value="">
     <label>Password</label>
     <input type="password" name="password" value="">
-    <label>Email</label>
+    <label class="email">Email</label>
     <input type="text" name="email" value="">
+    <br>
       <select name="lvllist">
         <option value="">Select User Level</option>
         <option value="2">Web Admin</option>
         <option value="1">Web Master</option>
       </select>
-
-      <input type="submit" name="submit" value="submit">
+      <br><br>
+      <input type="submit" name="submit" value="SUBMIT" class="button">
 
   </form>
+</div>
 
   <i class="far fa-star"></i>
   <i class="far fa-star"></i>

@@ -9,6 +9,7 @@
         // echo $userstring;
         $userquery = mysqli_query($link, $userstring);
         if($userquery) {
+          // $sendMail = submitMessage($fname, $username, $password, $email);
           redirect_to('admin_index.php');
         } else {
           $message = "User error";

@@ -13,10 +13,6 @@ h3 {
   text-transform: uppercase;
   text-align: center; }
 
-  h4{
-    color:#23afdd;
-  }
-
 #login-container {
   margin: 0 auto;
   border: 3px solid #1587AC;
@@ -102,5 +98,55 @@ form {
   font-size: 1.2em;
   margin: 0 auto;
   color: #1587AC; }
+
+.admin-button {
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  text-align: center;
+  margin: 0 auto;
+  margin: 0 15px 35px 15px;
+  border-radius: 8px;
+  background: #a9e4f7;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #a9e4f7 0%, #0fb4e7 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #a9e4f7 0%, #0fb4e7 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #a9e4f7 0%, #0fb4e7 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e4f7', endColorstr='#0fb4e7',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+  .admin-button:hover {
+    background: #13b1ef;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #13b1ef 0%, #007da0 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #13b1ef 0%, #007da0 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #13b1ef 0%, #007da0 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13b1ef', endColorstr='#007da0',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ }
+
+#user-container {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: -30px;
+  text-align: center; }
+  #user-container button {
+    margin-top: 20px; }
+
+label, input {
+  margin: 10px 0; }
+
+.email {
+  margin-left: 25px; }
 
 /*# sourceMappingURL=main.css.map */
