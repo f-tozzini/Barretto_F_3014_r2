@@ -48,14 +48,12 @@ $time = date('G');
 
   <h2>You're finally here! <br>We've been waiting for you!</h2>
 
-  <h4> Your last time here was <?php echo $_SESSION['user_lastlog']; ?> </h4>
+  <!-- <h4> Your last time here was <?php echo $_SESSION['user_lastlog']; ?> </h4> -->
 
   <br>
-
-    <a href="admin_createuser.php" class="button">create user</a>
-    <a href="phpscripts/caller.php?caller_id=logout" class="button">Sign Out</a>
-
-  <br>
+    <a href="admin_createuser.php" class="admin-button">create user</a>
+    <a href="phpscripts/caller.php?caller_id=logout" class="admin-button">Sign Out</a>
+  <br>  <br>  <br>
 
 
   <i class="far fa-star"></i>
