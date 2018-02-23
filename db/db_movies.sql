@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 16, 2018 at 07:43 PM
+-- Generation Time: Feb 23, 2018 at 03:43 AM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.6
 
@@ -1028,18 +1028,19 @@ CREATE TABLE `tbl_user` (
   `user_email` varchar(250) NOT NULL,
   `user_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `user_ip` varchar(50) NOT NULL DEFAULT 'no',
-  `user_lastlog` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `user_fail` varchar(100) NOT NULL
+  `user_lastlog` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `user_fail` varchar(100) NOT NULL DEFAULT '0',
+  `user_level` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_user`
 --
 
-INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_name`, `user_pass`, `user_email`, `user_date`, `user_ip`, `user_lastlog`, `user_fail`) VALUES
-(1, 'flavia', 'flavia', '1234', 'flavia@flavia.com', '2018-02-09 21:20:40', '::1', '2018-02-15 04:20:54', '0'),
-(2, 'flavia', 'flavia2', '1234', '', '2018-02-15 04:23:17', '::1', '2018-02-15 04:23:42', '0'),
-(3, 'flavia', 'flavia2', '1234', '', '2018-02-15 04:23:21', 'no', '2018-02-15 04:23:21', '0');
+INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_name`, `user_pass`, `user_email`, `user_date`, `user_ip`, `user_lastlog`, `user_fail`, `user_level`) VALUES
+(1, 'flavia', 'flavia', '1234', 'flavia@flavia.com', '2018-02-09 21:20:40', '::1', '2018-02-15 04:20:54', '0', 0),
+(15, 'fla', 'flavia', 'MG?t7fQ&', '', '2018-02-23 01:36:58', 'no', '2018-02-23 01:36:58', '0', 0),
+(16, 'fla', 'flavia', '#i,%):yp', '', '2018-02-23 02:07:45', 'no', '2018-02-23 02:07:45', '0', 0);
 
 --
 -- Indexes for dumped tables
@@ -1236,7 +1237,7 @@ ALTER TABLE `tbl_urating`
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `user_id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `user_id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
